@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Subtitles
+subtitles/*.vtt
+subtitles/*.srt
+subtitles/*.json
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+
+# Environment
+.env
+venv/
+.venv/
+
+# yt-dlp temp files
+*.part
+*.ytdl
+
+# Consulting reports & data (large binaries)
+*.pdf
+*.pptx
+*.xlsx
+*.xls
+*.csv
+*.zip
+*.7z
+*.rar
+
+# IDE
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Node
+node_modules/
+
+# Temp
+tmp/
+temp/
+scratch/
