@@ -28,3 +28,37 @@
   - `~/.config/opencode/project-sync.csv` — Sync mapping table
 - **New Entries**: 0 (knowledge base not yet populated)
 - **Issues**: pip not installed on system; git PATH needed manual fix; yt-dlp not installed
+
+## 2026-07-26
+
+- **Action**: NotebookLM MCP setup completed
+- **Files Processed**:
+  - `~/.config/opencode/opencode.jsonc` — Added NotebookLM MCP entry
+  - `知識庫/工具開發/notebooklm-mcp-setup.md` — New knowledge entry
+  - `知識庫/_Index.md` — Added notebooklm-mcp-setup entry
+- **New Entries**: 1 (notebooklm-mcp-setup)
+- **Issues**: uv crashes with EXCEPTION_ACCESS_VIOLATION; using pip fallback
+
+## 2026-07-26 (Session 2)
+
+- **Action**: Browser control setup (Lazy Pack #06)
+- **Files Processed**:
+  - `~/.config/opencode/opencode.jsonc` — Added Playwright + open-computer-use MCP entries
+  - `知識庫/工具開發/browser-control-setup.md` — New knowledge entry
+  - `知識庫/_Index.md` — Added browser-control-setup entry
+- **New Entries**: 1 (browser-control-setup)
+- **Issues**: open-computer-use postinstall script fails on Windows (node PATH not propagated); used `--ignore-scripts`
+
+## Session Summary: 2026-07-26
+
+### What Was Done
+- Installed notebooklm-mcp-cli v0.9.4, configured Google auth (jesuscpa26@gmail.com, 51 cookies)
+- Added NotebookLM, Playwright, and open-computer-use MCP servers to opencode.jsonc
+- All 3 MCP servers verified (initialize handshake successful)
+- Fixed node PATH persistence (added `C:\Program Files\nodejs` to User PATH)
+- Created knowledge entries: notebooklm-mcp-setup.md, browser-control-setup.md
+
+### Status at Shutdown
+- **Active**: 5 MCP servers configured (obsidian, notebooklm, playwright, open-computer-use)
+- **Next**: First Playwright browser download (~300MB) on next use; `nlm setup add opencode` for editor integration
+- **Health**: All auth valid, git clean ready for push
